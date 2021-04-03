@@ -26,7 +26,18 @@ bindkey -v
 export KEYTIMEOUT=1
 autoload -Uz cursor_mode && cursor_mode
 
-if [ "$(tty)" = "/dev/tty1? ];
+zmodload zsh/complist
+bindkey -M menuselect 'h' vi-backward-char
+bindkey -M menuselect 'k' vi-up-line-or-history
+bindkey -M menuselect 'l' vi-forward-char
+bindkey -M menuselect 'j' vi-down-line-or-history
+
+# start startx on login
+if [ "$(tty)" = "/dev/tty1" ];
 then 
     pgrep i3 || exec startx "$XDG_CONFIG_HOME/X11/.xinitrc"
 fi
+
+# load syntax hightlighting
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
