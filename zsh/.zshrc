@@ -1,5 +1,9 @@
 source "$XDG_CONFIG_HOME/zsh/aliases"
 
+# add asdf
+. $HOME/.asdf/asdf.sh
+fpath=(${ASDF_DIR}/completions $fpath)
+
 # enable autocompletion
 autoload -Uz compinit; compinit
 
