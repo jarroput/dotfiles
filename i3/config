@@ -13,10 +13,6 @@ set $mod Mod4
 # is used in the bar {} block below.
 font pango:Inconsolata Nerd Font 12
 
-# This font is widely installed, provides lots of unicode glyphs, right-to-left
-# text rendering and scalability on retina/hidpi displays (thanks to pango).
-#font pango:DejaVu Sans Mono 8
-
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
 
@@ -259,7 +255,7 @@ client.unfocused 	#333333 #222222 #888888 #292d2e #222222
 client.urgent 		$red1 $red1 $white2 $red1 $red1
 client.placeholder 	#000000 #0c0c0c $white2 #000000 0c0c0c
 
-for_window [class="URxvt*"] border pixel 1
+for_window [class=".*"] border pixel 0
 
 # Terminal scratchpad
 for_window [instance="urxvt_scratchpad"] move to scratchpad, border none
