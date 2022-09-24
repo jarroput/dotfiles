@@ -1,3 +1,34 @@
+window: 
+  padding:
+    x: 5
+    y: 5
+  background_opacity: 1
+
+shell:
+  program: /opt/homebrew/bin/fish
+
+live_config_reload: true
+
+selection: 
+  save_to_clipboard: true
+
+font: 
+  normal:
+    family: Iosevka NFM
+    style: Medium
+  bold: 
+    family: Iosevka NFM
+    style: Bold
+  italic:
+    family: Iosevka NFM
+    style: MediumItalic
+  bold_italic: 
+    family: Iosevka NFM
+    style: BoldItalic
+  size: 12
+
+draw_bold_text_with_bright_colors: true
+
 # Configuration for Alacritty, the GPU enhanced terminal emulator.
 
 # Import additional configuration files
@@ -433,8 +464,6 @@
 #   - (macOS) /bin/bash --login
 #   - (Linux/BSD) user login shell
 #   - (Windows) powershell
-shell:
-  program: /opt/homebrew/bin/fish
 #  args:
 #    - --login
 
