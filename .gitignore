@@ -36,3 +36,4 @@ Documents/
 .docker/
 .subversion/
 .ssh/
+packer_compiled.lua
