@@ -6,7 +6,7 @@ vim.scriptencoding = 'utf-8'
 
 -- global options
 o.encoding = 'utf-8'
-o.syntax = true 
+o.syntax = true
 o.fileencoding = 'utf-8'
 o.title = true
 o.autoindent = true
@@ -21,18 +21,18 @@ o.breakindent = true
 o.wrap = true
 o.laststatus = 2
 o.showcmd = true
-o.backspace = "start,eol,indent" 
+o.backspace = "start,eol,indent"
 o.shell = 'fish'
 o.wildignore = '*/node_modules/*,*/_build/*'
+o.tabstop = 2
+o.shiftwidth = 2
+o.softtabstop = 2
 
 -- window-local options
 wo.number = true
 wo.relativenumber = true
 
 -- buffer-local options
-bo.tabstop = 2
-bo.shiftwidth = 2
-bo.softtabstop = 2
 bo.expandtab = true
 
 -- turn off paste when leaving insert mode
@@ -40,4 +40,3 @@ vim.api.nvim_create_autocmd("InsertLeave", {
   pattern = "*",
   command = "set nopaste"
 })
-
