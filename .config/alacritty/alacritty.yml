@@ -6,6 +6,10 @@ window:
 
 shell:
   program: /opt/homebrew/bin/fish
+  args: 
+  - -l
+  - -c 
+  - "tmux attach || tmux"
 
 live_config_reload: true
 
