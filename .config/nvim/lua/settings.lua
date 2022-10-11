@@ -25,6 +25,7 @@ o.backspace = "start,eol,indent"
 o.shell = 'fish'
 o.wildignore = '*/node_modules/*,*/_build/*'
 o.tabstop = 2
+o.expandtab = true
 o.shiftwidth = 2
 o.softtabstop = 2
 
@@ -33,6 +34,9 @@ wo.number = true
 wo.relativenumber = true
 
 -- buffer-local options
+bo.softtabstop = 2
+bo.shiftwidth = 2
+bo.tabstop = 2
 bo.expandtab = true
 
 -- turn off paste when leaving insert mode
