@@ -9,6 +9,7 @@ Bin/
 .vscode/
 .omnisharp/
 .npm/
+.git/
 .nuget/
 .ngrok2/
 .mono/
